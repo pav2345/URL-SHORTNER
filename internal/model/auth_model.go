@@ -21,10 +21,9 @@ type SigninRequest struct {
 	Email    string `json:"email" binding:"required"`
 	Password string `json:"password" binding:"required"`
 }
-type RefreshToken struct {
+type RefreshRequest struct {
 	RefreshToken string `json:"refresh_token" binding:"required"`
 }
-
 type LogoutRequest struct {
 	RefreshToken string `json:"refresh_token" binding:"required"`
 }
